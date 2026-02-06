@@ -66,7 +66,7 @@ public class BankAccount {
             throw new IllegalStateException("Account is already closed");
         }
         if (balance > 0) {
-            throw new IllegalStateException("Cannot close account with remaining balance");
+            throw new IllegalStateException("Cannot close account with remaining balance please withdraw all amounts");
         }
 
         isActive = false;
